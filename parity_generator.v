@@ -1,11 +1,11 @@
 module parity_generator(
-    input [3:0] data_in,      // 4-bit input data
-    output reg parity         // Parity bit output
+    input [3:0] data_in,      
+    output reg parity         
 );
 
     always @(*) begin
-        // Even parity generation
-        parity = ^data_in;     // XOR of all input bits
+       
+        parity = ^data_in;     
     end
 
 endmodule
